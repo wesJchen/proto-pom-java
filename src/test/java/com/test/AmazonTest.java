@@ -33,7 +33,7 @@ public class AmazonTest extends BaseTest {
         }
 
         // ASSERT
-        Assert.assertFalse(amazonPage.searchResults.isDisplayed(), "Search results are not displayed!");
+        Assert.assertTrue(amazonPage.searchResults.isDisplayed(), "Search results are not displayed!");
 
     }
         
