@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class AmazonTest extends BaseTest {
 
-    @Test
+    @Test(groups = "ecommerce")
     public void verifySearchProductResults() {
         // ARRANGE
         driver.get("https://www.amazon.com");

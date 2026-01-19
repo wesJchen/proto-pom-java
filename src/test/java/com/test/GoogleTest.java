@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class GoogleTest extends BaseTest {
 
-    @Test // This is your actual test case
+    @Test(groups = "general") // This is your actual test case
     public void verifyGoogleTitle() {
         driver.get("https://www.google.com");
         String actualTitle = driver.getTitle();
@@ -17,7 +17,7 @@ public class GoogleTest extends BaseTest {
         Assert.assertEquals(actualTitle, expectedTitle, "Title does not match!");
     }
 
-    @Test // Example using Page Object Model
+    @Test(groups = "general") // Example using Page Object Model
     public void verifyGoogleSearchWithPageObject() {
         driver.get("https://www.google.com");
 

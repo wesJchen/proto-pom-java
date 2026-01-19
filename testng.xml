@@ -3,16 +3,15 @@
 
 <suite name="Test Suite" parallel="false" verbose="1">
     
-    <!-- General Test Suite - Basic functionality tests -->
-    <test name="General Tests">
+    <test name="All Tests">
+        <groups>
+            <run>
+                <include name="general"/>
+                <include name="ecommerce"/>
+            </run>
+        </groups>
         <classes>
             <class name="com.test.GoogleTest"/>
-        </classes>
-    </test>
-    
-    <!-- E-commerce Test Suite - Shopping and product related tests -->
-    <test name="E-commerce Tests">
-        <classes>
             <class name="com.test.AmazonTest"/>
         </classes>
     </test>
@@ -21,6 +20,11 @@
     Future test suites can be added here:
     
     <test name="Authentication Tests">
+        <groups>
+            <run>
+                <include name="authentication"/>
+            </run>
+        </groups>
         <classes>
             <class name="com.test.LoginTest"/>
             <class name="com.test.RegistrationTest"/>
@@ -28,15 +32,14 @@
     </test>
     
     <test name="Payment Tests">
+        <groups>
+            <run>
+                <include name="payment"/>
+            </run>
+        </groups>
         <classes>
             <class name="com.test.CheckoutTest"/>
             <class name="com.test.PaymentTest"/>
-        </classes>
-    </test>
-    
-    <test name="Search Tests">
-        <classes>
-            <class name="com.test.SearchTest"/>
         </classes>
     </test>
     -->
