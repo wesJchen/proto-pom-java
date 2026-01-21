@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class PortfolioTest extends BaseTest {
 
-    @Test(groups="general")
+    @Test //(groups="general")
     public void VerifyPortfolioSideBar() {
         driver.get("https://www.wesjchen.com");
 
@@ -26,8 +26,6 @@ public class PortfolioTest extends BaseTest {
         HomePage.clickPortfolioLink();
 
         //Assert
-
-        //Verify all portfolio links are displayed
         Assert.assertTrue(HomePage.isTestAutomationLinkDisplayed(), "Test Automation Link not displayed after clicking Portfolio");
         Assert.assertTrue(HomePage.isDataLinkDisplayed(), "Data link is not displayed");
         Assert.assertTrue(HomePage.isDevelopmentLinkDisplayed(), "Development link is not displayed");

@@ -64,28 +64,6 @@ public class HomePage {
         }
     }
 
-    // Public getter methods
-    public WebElement getTestAutomationLink() {
-        return TestAutomationLink;
-    }
-
-    public WebElement getDataLink() {
-        return DataLink;
-    }
-
-    public WebElement getDevelopmentLink() {
-        return DevelopmentLink;
-    }
-
-    public WebElement getCurriculumVitaeLink() {
-        return CurriculumVitaeLink;
-    }
-
-    public WebElement getContactLink() {
-        return ContactLink;
-    }
-
-
     // Page Actions
     public void clickHomeButtonLink() {
         HomeButtonLink.click();
